@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Mukta', sans-serif;
 }
 
@@ -491,6 +492,10 @@ nav ul li a:hover {
         height: 100%;
     }
 
+    #Contact{
+        height: 100vh;
+    }
+
     .hero1 {
         width: 0px;
     }
@@ -515,7 +520,11 @@ nav ul li a:hover {
         width: 50%;
     }
 
-    .logo {
+    .logo{
+        width: auto;
+    }
+
+    #Logo {
         width: 420px;
     }
 
@@ -536,7 +545,7 @@ nav ul li a:hover {
 
     .preview {
         width: 450px;
-        margin: 20px;
+        margin: 10px;
     }
 
     .contactDetails {
@@ -560,12 +569,12 @@ nav ul li a:hover {
         align-items: center;
     }
 
-    .preview{
-        width: 90%;
+    #Contact{
+        height: 100%;
     }
 
-    .platforms{
-        padding: 0px 75px;
+    .platforms h3{
+          text-align: center;
     }
 
     .connect{
@@ -585,14 +594,23 @@ nav ul li a:hover {
 
 @media (max-width: 530px) {
        .description h2{
-        font-size:  1.5rem;
+        font-size:  1.25rem;
     }
 
-    .description p{
+    .preview{
+        width: 90%;
+    }
+
+    .description p,  .aboutMe p{
         font-size: 0.8rem;
+        line-height: 20px;
     }
 
-    .logo{
+    #Logo{
         width: 350px;
+    }
+
+    .message h2{
+        text-align: center;
     }
 }
