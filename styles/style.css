@@ -369,7 +369,7 @@ nav ul li a:hover {
 }
 
 .skillsApplied {
-    margin: 10px 5px;
+    margin: 10px 0px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -617,11 +617,33 @@ nav ul li a:hover {
     .languages ul,.frameworksandlibraries ul,.softwares ul{
         font-size: 0.8rem;
     }
+
+    .college h3,.higherschool h3, .highschool h3{
+        font-size: 1rem;
+    }
+
+    .previewDescription h3{
+        font-size: 1rem;
+    }
+
+    .previewDescription{
+        padding: 0px;
+    }
+
+    .workSkill{
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+
+    .skillsApplied{
+        margin: 10px;
+    }
     #Logo{
         width: 350px;
     }
 
     .message h2{
         text-align: center;
+        font-size: 1rem;
     }
 }
