@@ -606,6 +606,17 @@ nav ul li a:hover {
         line-height: 20px;
     }
 
+    .languages h3,.frameworksandlibraries h3,.softwares h3{
+        font-size: 1rem;
+    }
+
+    .languages,.frameworksandlibraries,.softwares{
+        margin: 0px 10px;
+    }
+
+    .languages ul,.frameworksandlibraries ul,.softwares ul{
+        font-size: 0.8rem;
+    }
     #Logo{
         width: 350px;
     }
