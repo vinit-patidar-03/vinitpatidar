@@ -469,6 +469,11 @@ nav ul li a:hover {
 
 .group input {
     height: 5vh;
+    padding: 0px 10px;
+}
+
+textarea{
+    padding: 5px 10px;
 }
 
 .submit {

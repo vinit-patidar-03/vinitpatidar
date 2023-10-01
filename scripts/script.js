@@ -1,4 +1,4 @@
-//Routing between skills and Academics
+ //Routing between skills and Academics
 const skills = document.querySelector('.skillroute');
 const academics = document.querySelector('.academicsroute');
 const route = document.querySelectorAll('.route');
@@ -65,3 +65,56 @@ projects.forEach((element, index) => {
         previewProject(index)
     })
 })
+
+//form submission
+const Name = document.getElementById('name');
+const Email = document.getElementById('email');
+const Message = document.getElementById('message');
+const btn = document.getElementById('btn');
+const stage = document.getElementById('status');
+let identity;
+let message;
+let email;
+Name.addEventListener('change',(e)=>{
+    identity = e.target.value;
+    console.log(identity);
+})
+
+Email.addEventListener('change',(e)=>{
+    email = e.target.value;
+    console.log(email);
+})
+
+Message.addEventListener('change',(e)=>{
+    message = e.target.value;
+    console.log(message);
+})
+
+ btn.addEventListener('click', async (e)=>{
+    e.preventDefault();
+      const response = await fetch('https://vinitpatidarbackend.vercel.app/',{
+        method: "POST",
+        headers: {
+           "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({name : identity,email: email,message: message})
+      })
+      const status = await response.json();
+
+      if(status.success)
+    {
+        stage.innerText = status.msg;
+        setTimeout(()=>{
+            stage.innerText = "";
+        },3000)
+         Name.value = "";
+         Email.value = "";
+         Message.value = "";
+    }
+    else{
+        stage.innerText = status.msg;
+    }
+      
+      console.log(status);
+
+ })
