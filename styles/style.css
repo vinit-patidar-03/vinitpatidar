@@ -422,6 +422,10 @@ nav ul li a:hover {
     font-size: 15px;
 }
 
+.details h3 a{
+    text-decoration: none;
+    color: #b9b9b9;
+}
 .platforms {
     padding: 50px;
     color: #e4e4e4;
