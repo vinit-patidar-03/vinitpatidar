@@ -32,9 +32,11 @@ hr {
 #About,
 #Contact {
   background: linear-gradient(to bottom, #0d1a35, #ad00c9);
+  background: linear-gradient(to bottom, #0d1a35, #ad00c9);
 }
 
 #Works {
+  background: linear-gradient(to bottom, #ad00c9, #0d1a35);
   background: linear-gradient(to bottom, #ad00c9, #0d1a35);
 }
 
@@ -422,6 +424,10 @@ nav ul li a:hover {
   font-size: 15px;
 }
 
+.details h3 a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
 .details h3 a {
   text-decoration: none;
   color: #b9b9b9;
