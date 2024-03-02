@@ -555,10 +555,10 @@ textarea {
     width: 100%;
   }
 
-  .preview {
+  /* .preview {
     width: 450px;
     margin: 10px;
-  }
+  } */
 
   .contactDetails {
     flex-direction: column;
@@ -608,9 +608,9 @@ textarea {
     font-size: 1.25rem;
   }
 
-  .preview {
+  /* .preview {
     width: 90%;
-  }
+  } */
 
   .description p,
   .aboutMe p {
